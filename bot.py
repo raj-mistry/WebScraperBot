@@ -13,16 +13,11 @@ client = commands.Bot(command_prefix='.')
 
 
 bannedwords = [
-    "fuck",
-    "bitch",
-    "cunt",
-    "nigger",
-    "nigga",
-    "ass",
-    "pussy",
-    "retard",
-    "whore",
-    "dick",
+    "insert",
+    "your",
+    "banned",
+    "words",
+    "here"
 ]
 
 
@@ -49,6 +44,7 @@ async def on_message(message):
             "I'm fine with alchohol, cigarettes and marijuana, but coccaine is where I draw the line",
             "My grandad asked me how to print on his computer...I told him it’s Ctrl-P. He says he hasn’t been able to do that for ages.",
             "Today a man knocked on my door and asked for a small donation towards the local swimming pool. I gave him a glass of water.",
+            "What do you call a blind deer? No Idea."
         ]
         num = random.randint(0, len(jokes))
         randomjoke = jokes[num]
@@ -102,6 +98,6 @@ async def on_message(message):
                 handle.write(block)
         await message.channel.send(file=discord.File('pic1.jpg'))
 
-tokenraj = 'Km7Afw3mSb95VXLzZNF87N1ovYJh4PWM'
-tokengarage = 'NzA3NDM1MDQyNjE5NjU0MTk0.XrIxBQ.7YoGRHMH3BSAIinj7OIzAhcvHkE'
+tokenraj = 'discordtoken'
+tokengarage = 'discordtoken'
 client.run(tokenraj)
